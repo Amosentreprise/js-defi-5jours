@@ -1,0 +1,9 @@
+- Un tableau (quotes) peut contenir plusieurs objets avec leurs propres propriétés.
+
+- Math.random() + Math.floor() permet de choisir aléatoirement un élément dans un tableau.
+
+- getElementById() permet de cibler un élément HTML précis.
+
+- textContent permet de modifier ce que voit l’utilisateur à l’écran.
+
+- addEventListener("click", ...) permet de rendre une page interactive.
