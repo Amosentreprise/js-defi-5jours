@@ -24,6 +24,6 @@ btn.addEventListener("click", () => {
   const finalPrice = price - discountAmount;
 
   // Affichage du résultat
-  resultDiv.textContent = "Prix final :" + finalPrice.toFixed(2) + "FCFA";
+  resultDiv.textContent = "Prix final : " + finalPrice + " FCFA";
   resultDiv.style.color = "green";
 });
