@@ -1,0 +1,9 @@
+- parseFloat() pour convertir les entrées texte en nombres
+
+- (prix * %remise) / 100 pour calculer une remise
+
+-  .textContent pour afficher dynamiquement un message
+
+- isNaN() pour éviter les erreurs de saisie
+
+- Utiliser .style.color pour rendre le feedback plus visuel
