@@ -1,0 +1,77 @@
+====Les backticks `` (template literals)====
+À quoi ça sert ?
+
+Les backticks (alt + 7 sur certains claviers) permettent d’écrire des chaînes de caractères
+ dynamiques : c’est-à-dire dans lesquelles on peut insérer facilement des variables ou des 
+ expressions.
+
+Exemple :
+
+const nom = "Sarah";
+console.log(`Bonjour ${nom} !`);
+➡️ Affiche : Bonjour Sarah !
+
+Pourquoi c’est mieux que + ?
+
+Avant :
+
+console.log("Bonjour " + nom + " !");
+
+Avec backticks :
+
+console.log(`Bonjour ${nom} !`);
+✅ Plus lisible
+✅ Peut contenir du texte sur plusieurs lignes
+
+==== ${} : Interpolation ===
+${} est utilisé à l’intérieur des backticks pour évaluer du code JS : variable, expression, appel de fonction…
+
+Exemples :
+
+
+const x = 5;
+const y = 10;
+console.log(`Le résultat est : ${x + y}`);  // => Le résultat est : 15
+
+⚠️ On n’utilise ${} que dans les backticks, pas dans les guillemets " " ou ' '.
+
+
+
+===forEach — la boucle sur tableaux===
+
+Définition simple :
+
+forEach permet de parcourir un tableau et d’appliquer une fonction sur chaque élément.
+
+Syntaxe :
+
+monTableau.forEach(function(element, index) {
+  // faire quelque chose avec element
+});
+Ou en version fléchée :
+
+monTableau.forEach((element, index) => {
+  console.log(index, element);
+});
+Exemple concret :
+
+
+const fruits = ["banane", "pomme", "mangue"];
+
+fruits.forEach((fruit, i) => {
+  console.log(`${i + 1}. ${fruit}`);
+});
+➡️ Résultat :
+
+1. banane
+2. pomme
+3. mangue
+
+À quoi ça sert ?
+
+- Afficher chaque élément d’un tableau
+
+- Générer des éléments HTML à partir d’une liste (ex: quiz, todo)
+
+- Appliquer une action à chaque élément
+
